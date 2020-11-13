@@ -11,7 +11,7 @@ class Person(models.Model):
     def save(self, *args, **kwargs):
         schedule = Schedule.objects.create(
             name = self.__str__(),
-            func = 'async_test.func.send_email',
+            func = 'djangoq.services.send_email',
             args = f"'{self.email}'",
             schedule_type = Schedule.DAILY,
         )

@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from async_test import views
+from .views import testredisview
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('async', views.index),
+    path('async', testredisview),
 ]

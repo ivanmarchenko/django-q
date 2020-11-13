@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # user app
-    'async_test',
+    # 'async_test',
 
     # other apps
     'django_q',
